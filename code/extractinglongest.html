@@ -1,0 +1,12 @@
+// extract the longest word
+function text(n){
+	let Split = n.split(" ");
+    let text = "";
+    for(let word of Split){
+    	if(word.length > text.length){
+        	text = word;
+        }
+    }
+    return text;
+}
+console.log(text("I am a Programmer"))
